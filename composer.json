@@ -1,0 +1,44 @@
+{
+    "name": "ramy.hakam/design-patterns-course",
+    "description": "code examples for design patterns in php course",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Ramy hakam",
+            "email": "pencilsoft1@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^8.5.8",
+        "ramy.hakam/basic-auth-lib": "dev-master",
+        "ramy.hakam/token-auth-lib": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Creational\\": "Creational",
+            "Structural\\": "Structural",
+            "Behavioral\\": "Behavioral",
+            "Others\\": "Others"
+        }
+    },
+
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test" : "vendor/bin/phpunit"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "BasicAuthLib"
+        },
+        {
+            "type": "path",
+            "url": "TokenAuthLib"
+        }
+    ],
+    "license": ["MIT"]
+}
